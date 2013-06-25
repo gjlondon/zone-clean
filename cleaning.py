@@ -3,9 +3,9 @@ import pprint
 import random
 import collections
 
-peps = ["Roomie", "Other Roomie", "It's Me!"]
-random.shuffle(peps)
-d = collections.deque(peps)
+d = collections.deque(["Roomie", "Other Roomie", "It's Me!"])
+zones = ["Kitchen", "Bathroom", "Everything Else"]
+random.shuffle(d)
 
 for month in range(6, 13):
 
@@ -14,12 +14,9 @@ for month in range(6, 13):
         sun = week[-1]
         if sun == 0:
             continue
-        print "{}-{}".format(month, sun)
-        print """
-        Kitchen: {}
-        Bathroom: {}
-        Living Room / Trash: {}
-        """.format(d[0], d[1], d[2])
+        print "\nWeek ending {}-{}\n".format(month, sun)
+        for line in zip(zones, d):
+            print "{}:\t{}".format(*line)
         d.rotate(1)
         
 
