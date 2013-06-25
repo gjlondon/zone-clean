@@ -18,4 +18,5 @@ So far, this repo just contains a script that creates the rotating zone assignme
 * Become sentient and take over the apartment.
 
 To use the script, just stick in your roommates names and adjust the
-number of zones to match your # of roommates.
+number of zones to match your # of roommates. Copy-paste the output
+of the script to an email, and enjoy endless cleanliness.
