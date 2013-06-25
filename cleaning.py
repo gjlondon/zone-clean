@@ -13,7 +13,6 @@ for month in range(this_month,
                    this_month + 12):
     if month > 12:
         month -= 12
-    print month
     c = calendar.monthcalendar(2013, month)
     for week in c:
         sun = week[-1]
